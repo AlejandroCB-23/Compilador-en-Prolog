@@ -1,0 +1,31 @@
+program fibonacci;
+var
+  i;
+  n;
+  a;
+  b;
+  c;
+
+begin
+  a:=0;
+  b:=1;
+  read(n);
+  if (n = 0) then
+  begin
+    writeln(0);
+  end;
+  if (n = 1) then
+  begin
+    writeln(1);
+  end;
+  if (n > 1) then
+  begin
+    for i := 1 to n do
+    begin
+      c := a + b;
+      a := b;
+      b := c;
+    end;
+    writeln(b);
+  end;
+end.

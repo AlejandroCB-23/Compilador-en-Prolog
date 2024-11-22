@@ -1,0 +1,15 @@
+program suma;
+var
+  sumando1;
+  sumando2;
+  suma;
+
+begin
+  write('ingrese un numero ');
+  read(sumando1);
+  write('ingrese otro numero ');
+  read(sumando2);
+  suma:=sumando1 + sumando2;
+  write('Resultado es');
+  writeln(suma); 
+end.
